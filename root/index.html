@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Elustada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Elustada</h1>
+        <img src="images/logo.png" alt="Elustada Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+
+
+        <section id="historia">
+            <h2>Historia</h2>
+            <p>
+                A lo largo de la historia, la búsqueda de iluminación artificial ha sido una constante para la humanidad. Se inició con antorchas y lámparas de aceite, que proporcionaban una luz tenue en la oscuridad. Con el tiempo, evolucionaron hacia lámparas de aceite más avanzadas, utilizando mechas mejoradas y recipientes de barro o metal para lograr una luz más estable. En el siglo XIX, las lámparas de queroseno surgieron como una alternativa más brillante y duradera. Sin embargo, el mayor avance llegó con la invención de la lámpara incandescente por Thomas Edison en 1879. Esta innovación empleaba un filamento de carbono en una bombilla de vidrio, produciendo una luz brillante y cálida que revolucionó la iluminación en hogares y ciudades. Posteriormente, las lámparas fluorescentes surgieron en la década de 1930, utilizando un tubo de gas y un recubrimiento de fósforo para generar luz visible de manera más eficiente, especialmente en entornos comerciales e industriales. La búsqueda de eficiencia energética y mayor durabilidad llevó a la popularización de las lámparas LED. Estos diodos emisores de luz, introducidos en tiempos más recientes, logran una iluminación brillante y de alta calidad con un consumo de energía significativamente menor. Las lámparas LED se convirtieron en la opción preferida para iluminar hogares, espacios públicos y comerciales, marcando un hito en la historia de la iluminación. En resumen, desde las primitivas antorchas hasta las modernas lámparas LED, la humanidad ha evolucionado en su capacidad para vencer la oscuridad y obtener una luz más eficiente y duradera. Cada avance tecnológico ha llevado a una mayor comodidad y seguridad, asegurando que la humanidad siga iluminando su camino hacia el futuro.
+            </p>
+        </section>
+
+        <section id="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="carousel">
+                <figure>
+                    <img class="carousel-img" src="images/elustada-X.png" alt="Lámpara 1">
+                    <figcaption id="caption1">Elustada X</figcaption>
+                </figure>
+                <figure>
+                    <img class="carousel-img" src="images/pocket-blush.png" alt="Lámpara 2">
+                    <figcaption id="caption2">Pocket Blush</figcaption>
+                </figure>
+                <figure>
+                    <img class="carousel-img" src="images/Pocket-CarbonED.png" alt="Lámpara 3">
+                    <figcaption id="caption3">Pocket CarbonED</figcaption>
+                </figure>
+        
+                <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+                <button class="next" onclick="plusSlides(1)">&#10095;</button>
+            </div>
+        </section>
+        
+
+        <section id="nosotros">
+            <h2>Nuestro Equipo</h2>
+            <div class="team-member">
+                <div class="member">
+                    <img src="images/jenaro.png" alt="Miembro 1">
+                    <h3>Jenaro, Lopez</h3>
+                    <p>Finanzas</p>
+                </div>
+                <div class="member">
+                    <img src="images/nahuel.png" alt="Miembro 2">
+                    <h3>Salinas, Nahuel</h3>
+                    <p>Dirección</p>
+                </div>
+                <div class="member">
+                    <img src="images/uriel.png" alt="Miembro 3">
+                    <h3>Blanco, Uriel</h3>
+                    <p>Producción</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Interesado en nuestros productos? Contáctanos:</p>
+        <form action="enviar_formulario.php" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+    
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Elustada</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=61553789558654" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com/_Elustada_" target="_blank"><img src="images/X.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/elustada/" target="_blank"><img src="images/instagram.png"Instagram"></a>
+            </div>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
